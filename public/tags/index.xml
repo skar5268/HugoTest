@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 阿若的測試部落格</title>
-    <link>http://localhost:1313/liva/examplesite/tags/</link>
+    <link>http://localhost:1313/skar5268/hugo/tags/</link>
     <description>Recent content in Tags on 阿若的測試部落格</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
     <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/liva/examplesite/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/skar5268/hugo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game</title>
-      <link>http://localhost:1313/liva/examplesite/tags/game/</link>
+      <link>http://localhost:1313/skar5268/hugo/tags/game/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/liva/examplesite/tags/game/</guid>
+      <guid>http://localhost:1313/skar5268/hugo/tags/game/</guid>
       <description></description>
     </item>
     <item>
       <title>New</title>
-      <link>http://localhost:1313/liva/examplesite/tags/new/</link>
+      <link>http://localhost:1313/skar5268/hugo/tags/new/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/liva/examplesite/tags/new/</guid>
+      <guid>http://localhost:1313/skar5268/hugo/tags/new/</guid>
       <description></description>
     </item>
     <item>
       <title>Photos</title>
-      <link>http://localhost:1313/liva/examplesite/tags/photos/</link>
+      <link>http://localhost:1313/skar5268/hugo/tags/photos/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/liva/examplesite/tags/photos/</guid>
+      <guid>http://localhost:1313/skar5268/hugo/tags/photos/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/liva/examplesite/tags/python/</link>
+      <link>http://localhost:1313/skar5268/hugo/tags/python/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/liva/examplesite/tags/python/</guid>
+      <guid>http://localhost:1313/skar5268/hugo/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>React</title>
-      <link>http://localhost:1313/liva/examplesite/tags/react/</link>
+      <link>http://localhost:1313/skar5268/hugo/tags/react/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/liva/examplesite/tags/react/</guid>
+      <guid>http://localhost:1313/skar5268/hugo/tags/react/</guid>
       <description></description>
     </item>
     <item>
       <title>HTML</title>
-      <link>http://localhost:1313/liva/examplesite/tags/html/</link>
+      <link>http://localhost:1313/skar5268/hugo/tags/html/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/liva/examplesite/tags/html/</guid>
+      <guid>http://localhost:1313/skar5268/hugo/tags/html/</guid>
       <description></description>
     </item>
   </channel>

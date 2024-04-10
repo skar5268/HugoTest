@@ -5,7 +5,7 @@ title = "阿若的測試部落格"
 theme = "liva-hugo"
 summaryLength = "1"
 paginate = 6
-disqusShortname = ""
+disqusShortname = "https-skar5268-github-io-hugotest"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]

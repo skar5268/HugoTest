@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Get In Touch on 阿若的測試部落格</title>
-    <link>http://localhost:1313/liva/examplesite/contact/</link>
+    <link>http://localhost:1313/skar5268/hugo/contact/</link>
     <description>Recent content in Get In Touch on 阿若的測試部落格</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/liva/examplesite/contact/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/skar5268/hugo/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
