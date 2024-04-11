@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS on 阿若的測試部落格</title>
+    <link>http://localhost:1313/skar5268/hugo/categories/js/</link>
+    <description>Recent content in JS on 阿若的測試部落格</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/skar5268/hugo/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOM</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-3/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-3/</guid>
+      <description>https://ithelp.ithome.com.tw/articles/10202689</description>
+    </item>
+    <item>
+      <title>for 迴圈</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-2/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>控制判斷</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-4/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-4/</guid>
+      <description>一、比較運算子 等於：== 會自動幫你轉型 ex.</description>
+    </item>
+    <item>
+      <title>變數與資料型別</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-1/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-1/</guid>
+      <description>讓程式以變數幫我們紀錄資訊</description>
+    </item>
+  </channel>
+</rss>

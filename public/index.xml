@@ -6,84 +6,98 @@
     <description>Recent content on 阿若的測試部落格</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/skar5268/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test01</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-1/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-1/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <title>Vue Router</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-15/</link>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-15/</guid>
+      <description>Vue Router 簡介 定義元件： 在 views 資料夾新增一個元件（檔案名稱大寫.</description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-10/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-10/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <title>元件</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-14/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-14/</guid>
+      <description>元件介紹 為什麼要拆解成元件 增加程式碼的可複用性 避免單一檔案過大 易於管理及協作 元件功能獨立化 頁面元件結構 元件資料獨立與傳遞 資料傳遞方向：</description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-11/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-11/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-12/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-12/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
+      <title>指令語法全介紹｜操作畫面超容易</title>
       <link>http://localhost:1313/skar5268/hugo/blog/post-13/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/skar5268/hugo/blog/post-13/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <description>指令語法全介紹｜操作畫面超容易 指令觀念介紹 專有名詞 1.</description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-2/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-2/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <title>關注點分離</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-12/</link>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-12/</guid>
+      <description>傳統 關注點分離 關注點分離介紹 傳統麵條式語法 一個一個依序往下寫</description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-3/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-3/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <title>Promise 非同步觀念</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-10/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-10/</guid>
+      <description></description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-4/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-4/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <title>在瀏覽器上運行 ES 模組</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-11/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-11/</guid>
+      <description></description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-5/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-5/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>http://localhost:1313/skar5268/hugo/blog/post-6/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>http://localhost:1313/skar5268/hugo/blog/post-6/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
+      <title>localStorage - 瀏覽器資料儲存</title>
       <link>http://localhost:1313/skar5268/hugo/blog/post-7/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/skar5268/hugo/blog/post-7/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <description>什麼是 localStorage ？ 瀏覽器的資料庫</description>
+    </item>
+    <item>
+      <title>Event</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-6/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-6/</guid>
+      <description>將內容（例如：座標、按鍵）記錄在 event 裡</description>
+    </item>
+    <item>
+      <title>DOM</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-3/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-3/</guid>
+      <description>https://ithelp.ithome.com.tw/articles/10202689</description>
+    </item>
+    <item>
+      <title>for 迴圈</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-2/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-5/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-5/</guid>
+      <description>變數 變數簡介 變數常見資料型別 數字、字串、布林（true、false） 變數裡面是空的，沒有任何值，預設就會是 undefined 撈文字裡面的內容 用 value typeof 查詢字串還是數字還是函式等 parseInt 函式 定義 函數：是一個任務會幫你執行裡面的算式</description>
+    </item>
+    <item>
+      <title>控制判斷</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-4/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-4/</guid>
+      <description>一、比較運算子 等於：== 會自動幫你轉型 ex.</description>
+    </item>
+    <item>
+      <title>變數與資料型別</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-1/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-1/</guid>
+      <description>讓程式以變數幫我們紀錄資訊</description>
     </item>
     <item>
       <title>How To Use Checklists To Improve Your UX</title>

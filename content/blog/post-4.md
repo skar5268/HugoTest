@@ -1,17 +1,17 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "控制判斷"
+date: 2021-01-19
 draft: false
 
 # post thumb
-image: "images/post/post-1.jpg"
+# image: "images/post/post-1.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Go Language"
+  - "JS"
 tags:
   - "Photos"
   - "Game"
@@ -23,145 +23,51 @@ tags:
 type: "post"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+#### 一、比較運算子
 
-<hr>
+等於：`== 會自動幫你轉型 ex.1 == '1' 為 true` `===為嚴謹模式`
 
-##### Emphasis
+不等於：!==
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+布林：true false
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+*一個等於，是賦予值的意思，而兩個等於則是內容進行比較*
 
-Combined emphasis with **asterisks and _underscores_**.
+Javascript 進階 3-7 寬鬆相等、嚴格相等以及隱含轉型
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+https://ithelp.ithome.com.tw/articles/10229398
 
-<hr>
+運算子 == 的資料格式轉換 (type conversion) 問題
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+規則說明：
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+https://es5.github.io/#x11.9.3
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+#### 二、邏輯運算值
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+And：&&
 
-[You can use numbers for reference-style link definitions][1]
+OR：||
 
-Or leave it empty and use the [link text itself].
+NOT：!
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
+if - 簡報介紹
 
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
+![](https://i.imgur.com/SHIRbZp.jpg)
 
 
-##### Unordered List
+switch - 簡報介紹
 
-* List item
-* List item
-* List item
-* List item
-* List item
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+![](https://i.imgur.com/s1MJqde.jpg)
 
 
-<hr>
+if 在瀏覽器編譯時，會全部看過一次，所以在編譯的速度和效能上比較不好
 
-##### Tables
+switch 只會看哪一個 case 符合，在去跑裡面的程式碼，但 switch 最好裡面有很多條件時再使用
 
-Colons can be used to align columns.
+「當是一個範圍的時候, ex 介於某區間 大於小於多少 --->用 if else」
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+「當是一個特定的明確 case 做比對時 --->用 switch 」
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
+if/else if ：會審視所有條件，若有符合條件才會執行大括號裡面的內容。
+switch ：不會審視所有條件是否符合，而是會根據一開始所給的變數狀態，直接跳到符合條件那行，再去執行程式內容。

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on 阿若的測試部落格</title>
+    <link>http://localhost:1313/skar5268/hugo/categories/vue/</link>
+    <description>Recent content in Vue on 阿若的測試部落格</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/skar5268/hugo/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>指令語法全介紹｜操作畫面超容易</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-13/</link>
+      <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-13/</guid>
+      <description>指令語法全介紹｜操作畫面超容易 指令觀念介紹 專有名詞 1.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>變數 on 阿若的測試部落格</title>
+    <link>http://localhost:1313/skar5268/hugo/tags/%E8%AE%8A%E6%95%B8/</link>
+    <description>Recent content in 變數 on 阿若的測試部落格</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/skar5268/hugo/tags/%E8%AE%8A%E6%95%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test01</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-1/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-1/</guid>
+      <description>變數與資料型別 讓程式以變數幫我們紀錄資訊</description>
+    </item>
+  </channel>
+</rss>

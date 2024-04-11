@@ -1,17 +1,17 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "指令語法全介紹｜操作畫面超容易"
+date: 2021-04-30
 draft: false
 
 # post thumb
-image: "images/post/post-3.jpg"
+# image: "images/post/post-3.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Go Language"
+  - "Vue"
 tags:
   - "Photos"
   - "Game"
@@ -22,146 +22,64 @@ tags:
 # post type
 type: "post"
 ---
+# 指令語法全介紹｜操作畫面超容易
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+## 指令觀念介紹
+![](https://i.imgur.com/TFpUsC9.png)
 
-<hr>
+![](https://i.imgur.com/BjNfQi1.png)
 
-##### Emphasis
+### 專有名詞
+**1. 指令 - Directives：**
+![](https://i.imgur.com/PD5rdXW.png)
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+**2. 修飾符 - Modifiers：**
+修飾符可以讓 v-model 更好運作
+![](https://i.imgur.com/eT1XP3E.png)
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+**3. 縮寫 - Shorthands：**
+![](https://i.imgur.com/fqCuvHF.png)
 
-Combined emphasis with **asterisks and _underscores_**.
+## 綁定內容於畫面上 v-text
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+v-text、{{}} (Mustache) 純文字的渲染
+雙向綁定的特色：在操作資料的時候，畫面也會跟著變化
 
-<hr>
+v-htm：渲染到畫面上的時候依然保有 HTML 的特色、使用這個方法需要確保資料是安全的
+[注意事項](https://vue3js.cn/docs/zh/api/directives.html#v-html)
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+v-once 單次綁定，後面不需要加參數
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+v-pre 讓文字不會被轉譯，可以顯示 {{}}
 
 
-<hr>
+## 多筆資料渲染 v-for
 
-##### Tables
+## 條件判斷 v-if
+判斷 HTML 的節點是否呈現
+v-show 只是把節點隱藏，v-if 則是把節點刪除
 
-Colons can be used to align columns.
+## HTML 屬性綁定 v-bind
+v-bind:綁定的屬性 = "值"
+簡化 >> :綁定的屬性 = "值"
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+## HTML 樣式綁定
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
+## 資料雙向綁定 v-model
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+### v-model 與表單
 
-<hr>
+### v-model 修飾符
+v-model.lazy（HTML 的 change 事件）
+v-model.number（將輸入的文字轉為 number 型別）
+v-model.trim（移除使用者輸入的前後空白）
 
-##### Image
 
-![image](../../images/post/post-1.jpg)
+### 事件觸發 v-on
+![](https://i.imgur.com/oFO1XE1.png)
 
-<hr>
+v-on 通常不太會直接跟 data 產生關係，大部分會直接來觸發 methods，透過這個 methods 來做更多事情
 
-##### Youtube video
+### v-on 修飾符
 
-{{< youtube C0DPdy98e4c >}}
+### v-on DOM 事件處理技巧

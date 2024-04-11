@@ -1,17 +1,17 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "DOM"
+date: 2021-01-19
 draft: false
 
 # post thumb
-image: "images/featured-post/post-3.jpg"
+# image: "images/featured-post/post-3.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Web Design"
+  - "JS"
 tags:
   - "Photos"
   - "Game"
@@ -20,149 +20,86 @@ tags:
   - "New"
 
 # post type
-type: "featured"
+type: "post"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
 
-<hr>
+https://ithelp.ithome.com.tw/articles/10202689
 
-##### Emphasis
+querySelector 與 getElementById 的差異
+(1) 相同點：選取 HTML 元素
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+(2) 相異點
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+(a) document.getElementById()：選取元素侷限於 id 元素，在網頁上 id 不能重複，只會有唯一一個。
 
-Combined emphasis with **asterisks and _underscores_**.
+例如：var msg = document.getElementById(‘hi’);
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+(b) document.querySelector()：選取元素包含 html標籤、id 元素、class 元素。
 
-<hr>
+例如：var msg = document.querySelector(#hi);
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+若對 兩者的差異 想要更進一步了解，附上相關網址供你參考：https://ithelp.ithome.com.tw/articles/10211605
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+插入 HTML 標籤的兩種方法
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+![](https://i.imgur.com/bzJdmdy.png)
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
+![](https://i.imgur.com/cwty8ym.png)
 
 
-##### Unordered List
 
-* List item
-* List item
-* List item
-* List item
-* List item
+在 HTML 世界哩，用的每一個網頁結構都算是一個節點
 
-<hr>
+textContent 只是單純去新增文字的節點
+innerHTML 增加 HTML 標籤在裡面。他會先將裡面**全部清空**，再賦予值進去
 
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
+ querySelectorAll 是為多項目設計的，因此使用時必須搭配for迴圈才能將值帶入
  
-```python
-s = "Python syntax highlighting"
-print s
+ 這邊補充說明 document.querySelector() 和 document.querySelectorAll() 的差異性：
+
+(a) 關於 document.querySelector()
+
+document.querySelector() 只會回傳 document 選到的第一個 class 元素，
+
+因此搭配 innerHTML 的寫法如下：
+
 ```
- 
+// HTML 部份
+<ul class='list'>
+ <li> 我是第一個 li 標籤 </li>
+ <li> 我是第二個 li 標籤 </li>
+</ul>
+
+// JS 部份
+var list = document.querySelector('.list li');
+list.innerHTML = '<li>被替換了</li>';
 ```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
+
+
+(b) 關於 document.querySelectorAll()
+
+假如是選取 'list' class 名稱內所有的 li 元素，
+
+搭配 innerHTML 的寫法如下：
 ```
 
-<hr>
+// JS 部份
+// 選取 'list' class 名稱內所有的 li 元素
+var list = document.querySelectorAll('.list li');
 
-##### Blockquote
+// 替換 'list' class 名稱內所有的 li 元素的內容
+for (var i = 0; i < list.length; i++) {
+ list[i].innerHTML = '<li>被替換了</li>';
+}
+```
 
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+[JavaScript String (字串)
+](https://www.fooish.com/javascript/string/)
 
 
-<hr>
+createElement 新增元素
+appendChild 增加子節點，會動態加在後面(跟 innerHTML 不同)
 
-##### Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
+innerHTML 有資安疑慮，如果取得的資料是由使用者填寫送出的，則有可能被塞惡意程式。因此若要使用 innerHTML，需要用可以信任的資料來去渲染出來。
+**表單輸入盡量不要用 innerHTML**

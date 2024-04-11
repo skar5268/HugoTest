@@ -1,17 +1,17 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "localStorage - 瀏覽器資料儲存"
+date: 2021-01-25
 draft: false
 
 # post thumb
-image: "images/post/post-4.jpg"
+# image: "images/post/post-4.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Go Language"
+  - "localStorage"
 tags:
   - "Photos"
   - "Game"
@@ -23,145 +23,66 @@ tags:
 type: "post"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+## 什麼是 localStorage ？
 
-<hr>
+瀏覽器的資料庫
 
-##### Emphasis
+**localStorage儲存資料型態**
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+HTML 5 新增 localStorage 特性，主要是解決 cookie 儲存空間不足的問題( cookie 中每條 cookie 的儲存空間為 4k )，
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+所以他只能存字串，再用 JSON.parse 轉為陣列讓  JS 去使用裡面的資料，所以裡面就算寫入數字、布林值等..
 
-Combined emphasis with **asterisks and _underscores_**.
+他還是會轉成字串儲存在瀏覽器，如同下面這篇文章內文中 localStorage 的侷限第四點
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/232745/
 
-<hr>
+「 localStorage 本質上是對字串的讀取，如果儲存內容多的話會消耗記憶體空間，會導致頁面變卡」
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+## setItem、getItem 基本操作
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+設定一個內容
 ```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
+localStorage.setItem("myname",str);
 ```
 
-<hr>
+取出 item 的內容
 
-##### Blockquote
+```
+console.log(localStorage.getItem('myname'));
+```
 
-> This is a blockquote example.
+[setItem、getItem 基本操作
+](https://codepen.io/skar5268/pen/wvzLaxE?editors=1010)
 
-<hr>
+## 透過 JSON.parse、JSON.stringify 來編譯資料
 
-##### Inline HTML
+因為 localStorage 只會保存 string 資料，如果要讀取陣列的資料需要使用 JSON：
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+1. 先將 array 轉成 string
+```
+JSON.stringify()
+```
+2. 要讀取資料時，將 string 轉成 array
+```
+JSON.parse()
+```
 
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+[透過 JSON.parse、JSON.stringify 來編譯資料
+](https://codepen.io/skar5268/pen/VwKJvwy?editors=1011)
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+## data-* - 透過 dataset 讀取自訂資料
 
+```
+document.querySelector('.list li').dataset;
+document.querySelector('.list li').dataset.dog;
+```
 
-<hr>
+[data-* - 透過 dataset 讀取自訂資料
+](https://codepen.io/skar5268/pen/ZEpdbyp)
 
-##### Tables
+## dataset、array 運用
 
-Colons can be used to align columns.
+[dataset、array 運用](https://codepen.io/skar5268/pen/ZEpdKmz?editors=0011)
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
+## splice - 刪除 array 資料

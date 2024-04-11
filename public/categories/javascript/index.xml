@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on 阿若的測試部落格</title>
+    <link>http://localhost:1313/skar5268/hugo/categories/javascript/</link>
+    <description>Recent content in JavaScript on 阿若的測試部落格</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/skar5268/hugo/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/skar5268/hugo/blog/post-5/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skar5268/hugo/blog/post-5/</guid>
+      <description>變數 變數簡介 變數常見資料型別 數字、字串、布林（true、false） 變數裡面是空的，沒有任何值，預設就會是 undefined 撈文字裡面的內容 用 value typeof 查詢字串還是數字還是函式等 parseInt 函式 定義 函數：是一個任務會幫你執行裡面的算式</description>
+    </item>
+  </channel>
+</rss>

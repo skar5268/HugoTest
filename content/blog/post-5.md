@@ -1,17 +1,17 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "JavaScript"
+date: 2021-01-19
 draft: false
 
 # post thumb
-image: "images/post/post-2.jpg"
+# image: "images/post/post-2.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Go Language"
+  - "JavaScript"
 tags:
   - "Photos"
   - "HTML"
@@ -22,145 +22,120 @@ tags:
 type: "post"
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+## 變數
 
-<hr>
-
-##### Emphasis
-
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-<hr>
-
-##### Link
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
+### 變數簡介
 
 
-##### Unordered List
 
-* List item
-* List item
-* List item
-* List item
-* List item
-<hr>
+#### 變數常見資料型別
 
-##### Code and Syntax Highlighting
+* 數字、字串、布林（true、false）
+* 變數裡面是空的，沒有任何值，預設就會是 undefined
+* 撈文字裡面的內容 用 value
+* typeof 查詢字串還是數字還是函式等
+* parseInt
 
-Inline `code` has `back-ticks around` it.
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+## 函式
+
+### 定義
+
+函數：是一個任務會幫你執行裡面的算式
+
+函式寫法：**宣告函式 函式名稱**
+
 ```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
+function greet(){
+
+alert('歡迎光臨！');
+
+alert('請問你要點些什麼？')
+
+}
 ```
 
-<hr>
+**執行函數**
 
-##### Blockquote
+greet(); *呼叫它後才會執行裡面的內容*
 
-> This is a blockquote example.
+函式名稱後面要括號()
 
-<hr>
+之前講到變數 有提到 var box = 10 會出現undefined的原因
 
-##### Inline HTML
+var box;
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+box = 10
 
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+分成兩步驟
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+### 問答區
 
 
-<hr>
+**1. 為什麼執行函式的下一行會出現 undefined？**
 
-##### Tables
+該值表示回傳的結果～
 
-Colons can be used to align columns.
+在 Chrome Devtool 執行一個命令都類似執行一個函式，
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+而這個函式由於沒有 return 任何值，所以會回傳 undefined
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
+程式碼載入 JavaScript 以後
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+他會自動把 function 放在最上面執行，也就是優先處理 function
 
-<hr>
+所以你不管放在哪裡的話
 
-##### Image
+function 都會放在最上面去做執行
 
-![image](../../images/post/post-1.jpg)
+**2. JavaScript裡的語句用分號結尾是個選項嗎**
 
-<hr>
+建議在寫程式碼最後結尾養成寫分號的習慣
 
-##### Youtube video
+主要是分號是代表語句分隔的意思
 
-{{< youtube C0DPdy98e4c >}}
+最常見的是在用 var 宣告變數後加上分號
+
+如 var a = 1;
+
+如果沒加上分號，下方程式碼會不了解後方的 kk 是否為 str 的內容
+
+`> var str = {'name': 'tom'} var kk = 3;`
+
+詳細可參考[這篇文章](https://eddychang.me/js-semicolon/)
+
+宣告在函數裡的變數，只存在於函數裡
+
+**函式帶參數**
+
+function count(oneNum){
+
+var total = oneNum *10;
+
+console.log('總數等於：' + total);
+
+}
+
+count(10)
+
+運算到小數點的方法：
+
+小數點可以使用 toFixed 讓它顯示後面幾位的內容
+
+document.getElementById('totalId').textContent = total.toFixed(2); // 112.47
+
+參數其實就是我們會帶入 function 的變數，在呼叫時候，把裡面的值傳遞到 function 裡面去執行，與一般變數不同，不用 var 去宣告他
+
+function 有 hoisting 觀念，它會自動把 function 放在最上面
+
+在JavaScript中undefined和not defined是不一樣的，undefined其實是一個值，not defined則是沒有定義過這個變項。
+
+https://pjchender.blogspot.com/2015/12/javascript-hoisting.html
+
+如果在 `var` 的變數前加入 `console.log()`，這個時候並不會出錯，則是會跳出 `undefined`，這表示這個變數在記憶體中已經有一個位置，只不過目前並沒有值。
+
+https://wcc723.github.io/javascript/2017/12/16/javascript-hoisting/
+
+JavaScript 是屬於單執行緒的程式語言  
+程式碼遇錯後則會中斷不再繼續執行  
+j若遇到未被定義的變數，則此錯誤造成後續程式碼不再執行
